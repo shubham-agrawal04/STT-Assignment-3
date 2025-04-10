@@ -1,0 +1,1147 @@
+{
+    "__main__": {
+        "bacon": 0,
+        "imports": [
+            "apscheduler",
+            "apscheduler._context",
+            "apscheduler._converters",
+            "apscheduler._decorators",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._marshalling",
+            "apscheduler._retry",
+            "apscheduler._schedulers",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler._validators",
+            "apscheduler.abc",
+            "apscheduler.datastores",
+            "apscheduler.datastores.base",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.local",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis",
+            "apscheduler.executors",
+            "apscheduler.executors.async_",
+            "apscheduler.executors.qt",
+            "apscheduler.executors.subprocess",
+            "apscheduler.executors.thread",
+            "apscheduler.serializers",
+            "apscheduler.serializers.cbor",
+            "apscheduler.serializers.json",
+            "apscheduler.serializers.pickle",
+            "apscheduler.triggers",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.combining",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.cron.expressions",
+            "apscheduler.triggers.cron.fields",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval"
+        ],
+        "name": "__main__",
+        "path": null
+    },
+    "anyio": {
+        "bacon": 2,
+        "imported_by": [
+            "anyio.streams.memory",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis",
+            "apscheduler.executors.qt",
+            "apscheduler.executors.subprocess",
+            "apscheduler.executors.thread"
+        ],
+        "name": "anyio",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/__init__.py"
+    },
+    "anyio.abc": {
+        "bacon": 2,
+        "imported_by": [
+            "anyio.from_thread",
+            "anyio.streams.memory",
+            "anyio.to_process",
+            "anyio.to_thread",
+            "apscheduler._schedulers.async_",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.psycopg"
+        ],
+        "imports": [
+            "anyio.from_thread"
+        ],
+        "name": "anyio.abc",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/abc/__init__.py"
+    },
+    "anyio.from_thread": {
+        "bacon": 2,
+        "imported_by": [
+            "anyio.abc",
+            "apscheduler._schedulers.sync",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.executors.qt"
+        ],
+        "imports": [
+            "anyio.abc",
+            "typing_extensions"
+        ],
+        "name": "anyio.from_thread",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/from_thread.py"
+    },
+    "anyio.streams": {
+        "bacon": 2,
+        "imported_by": [
+            "anyio.to_process",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.psycopg"
+        ],
+        "name": "anyio.streams",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/streams/__init__.py"
+    },
+    "anyio.streams.memory": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.psycopg"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.abc"
+        ],
+        "name": "anyio.streams.memory",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/streams/memory.py"
+    },
+    "anyio.to_process": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler.executors.subprocess"
+        ],
+        "imports": [
+            "anyio.abc",
+            "anyio.streams",
+            "typing_extensions"
+        ],
+        "name": "anyio.to_process",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/to_process.py"
+    },
+    "anyio.to_thread": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.executors.thread"
+        ],
+        "imports": [
+            "anyio.abc",
+            "typing_extensions"
+        ],
+        "name": "anyio.to_thread",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/anyio/to_thread.py"
+    },
+    "apscheduler": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._validators",
+            "apscheduler.datastores.memory",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.executors.qt",
+            "apscheduler.serializers.cbor",
+            "apscheduler.serializers.json",
+            "apscheduler.serializers.pickle"
+        ],
+        "imports": [
+            "apscheduler._context",
+            "apscheduler._decorators",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._retry",
+            "apscheduler._schedulers",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler._utils"
+        ],
+        "name": "apscheduler",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/__init__.py"
+    },
+    "apscheduler._context": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "apscheduler._schedulers",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures"
+        ],
+        "name": "apscheduler._context",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_context.py"
+    },
+    "apscheduler._converters": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._decorators",
+            "apscheduler._events",
+            "apscheduler._schedulers.async_",
+            "apscheduler._structures",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.combining",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.cron.expressions",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval"
+        ],
+        "name": "apscheduler._converters",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_converters.py"
+    },
+    "apscheduler._decorators": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler._validators",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler._decorators",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_decorators.py"
+    },
+    "apscheduler._enums": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._events",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler.abc",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy"
+        ],
+        "name": "apscheduler._enums",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_enums.py"
+    },
+    "apscheduler._events": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler.abc",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.local",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._enums",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "attrs",
+            "attrs.converters"
+        ],
+        "name": "apscheduler._events",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_events.py"
+    },
+    "apscheduler._exceptions": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._marshalling",
+            "apscheduler._schedulers.async_",
+            "apscheduler._utils",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.triggers.combining"
+        ],
+        "name": "apscheduler._exceptions",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_exceptions.py"
+    },
+    "apscheduler._marshalling": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_",
+            "apscheduler.serializers.cbor",
+            "apscheduler.serializers.json",
+            "apscheduler.triggers.combining"
+        ],
+        "imports": [
+            "apscheduler._exceptions"
+        ],
+        "name": "apscheduler._marshalling",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_marshalling.py"
+    },
+    "apscheduler._retry": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler.datastores.base",
+            "apscheduler.eventbrokers.base"
+        ],
+        "imports": [
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler._retry",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_retry.py"
+    },
+    "apscheduler._schedulers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._context"
+        ],
+        "name": "apscheduler._schedulers",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_schedulers/__init__.py"
+    },
+    "apscheduler._schedulers.async_": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._context",
+            "apscheduler._schedulers.sync"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.abc",
+            "apscheduler",
+            "apscheduler._context",
+            "apscheduler._converters",
+            "apscheduler._decorators",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._marshalling",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler._validators",
+            "apscheduler.abc",
+            "apscheduler.datastores",
+            "apscheduler.datastores.memory",
+            "apscheduler.eventbrokers",
+            "apscheduler.eventbrokers.local",
+            "apscheduler.executors",
+            "apscheduler.executors.async_",
+            "apscheduler.executors.subprocess",
+            "apscheduler.executors.thread",
+            "attr",
+            "attr.validators",
+            "attrs",
+            "typing_extensions"
+        ],
+        "name": "apscheduler._schedulers.async_",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_schedulers/async_.py"
+    },
+    "apscheduler._schedulers.sync": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._context"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.from_thread",
+            "apscheduler",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._schedulers.async_",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "attrs",
+            "typing_extensions"
+        ],
+        "name": "apscheduler._schedulers.sync",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_schedulers/sync.py"
+    },
+    "apscheduler._structures": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._context",
+            "apscheduler._decorators",
+            "apscheduler._events",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.executors.async_",
+            "apscheduler.executors.subprocess",
+            "apscheduler.executors.thread"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._enums",
+            "apscheduler._utils",
+            "apscheduler._validators",
+            "apscheduler.abc",
+            "attr",
+            "attr.setters",
+            "attrs",
+            "attrs.validators",
+            "typing_extensions"
+        ],
+        "name": "apscheduler._structures",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_structures.py"
+    },
+    "apscheduler._utils": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler",
+            "apscheduler._decorators",
+            "apscheduler._events",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler._validators",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.local",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.combining",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval"
+        ],
+        "imports": [
+            "apscheduler._exceptions",
+            "apscheduler._structures",
+            "apscheduler.abc"
+        ],
+        "name": "apscheduler._utils",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_utils.py"
+    },
+    "apscheduler._validators": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._decorators",
+            "apscheduler._schedulers.async_",
+            "apscheduler._structures",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.triggers.cron.expressions"
+        ],
+        "imports": [
+            "apscheduler",
+            "apscheduler._utils",
+            "attrs"
+        ],
+        "name": "apscheduler._validators",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/_validators.py"
+    },
+    "apscheduler.abc": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler.datastores.base",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.executors.async_",
+            "apscheduler.executors.qt",
+            "apscheduler.executors.subprocess",
+            "apscheduler.executors.thread",
+            "apscheduler.serializers.cbor",
+            "apscheduler.serializers.json",
+            "apscheduler.serializers.pickle",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.combining",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval"
+        ],
+        "imports": [
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._structures",
+            "typing_extensions"
+        ],
+        "name": "apscheduler.abc",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/abc.py"
+    },
+    "apscheduler.datastores": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "name": "apscheduler.datastores",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/datastores/__init__.py"
+    },
+    "apscheduler.datastores.base": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy"
+        ],
+        "imports": [
+            "apscheduler._retry",
+            "apscheduler.abc",
+            "apscheduler.serializers",
+            "apscheduler.serializers.pickle",
+            "attrs"
+        ],
+        "name": "apscheduler.datastores.base",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/datastores/base.py"
+    },
+    "apscheduler.datastores.memory": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "apscheduler",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler.datastores.base",
+            "attrs"
+        ],
+        "name": "apscheduler.datastores.memory",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/datastores/memory.py"
+    },
+    "apscheduler.datastores.mongodb": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.to_thread",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "apscheduler.datastores.base",
+            "attrs",
+            "attrs.validators",
+            "typing_extensions"
+        ],
+        "name": "apscheduler.datastores.mongodb",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/datastores/mongodb.py"
+    },
+    "apscheduler.datastores.sqlalchemy": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.to_thread",
+            "apscheduler._enums",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._structures",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "apscheduler.datastores.base",
+            "attr",
+            "attr.validators",
+            "attrs",
+            "sniffio"
+        ],
+        "name": "apscheduler.datastores.sqlalchemy",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/datastores/sqlalchemy.py"
+    },
+    "apscheduler.eventbrokers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "name": "apscheduler.eventbrokers",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/__init__.py"
+    },
+    "apscheduler.eventbrokers.asyncpg": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.abc",
+            "anyio.streams",
+            "anyio.streams.memory",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._utils",
+            "apscheduler.eventbrokers.base",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.eventbrokers.asyncpg",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/asyncpg.py"
+    },
+    "apscheduler.eventbrokers.base": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.local",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.abc",
+            "anyio.to_thread",
+            "apscheduler",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._retry",
+            "apscheduler.abc",
+            "apscheduler.serializers",
+            "apscheduler.serializers.json",
+            "attrs"
+        ],
+        "name": "apscheduler.eventbrokers.base",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/base.py"
+    },
+    "apscheduler.eventbrokers.local": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "apscheduler._events",
+            "apscheduler._utils",
+            "apscheduler.eventbrokers.base",
+            "attrs"
+        ],
+        "name": "apscheduler.eventbrokers.local",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/local.py"
+    },
+    "apscheduler.eventbrokers.mqtt": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.from_thread",
+            "anyio.to_thread",
+            "apscheduler._events",
+            "apscheduler._utils",
+            "apscheduler.eventbrokers.base",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.eventbrokers.mqtt",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/mqtt.py"
+    },
+    "apscheduler.eventbrokers.psycopg": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.abc",
+            "anyio.streams",
+            "anyio.streams.memory",
+            "apscheduler._events",
+            "apscheduler._exceptions",
+            "apscheduler._utils",
+            "apscheduler._validators",
+            "apscheduler.eventbrokers.base",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.eventbrokers.psycopg",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/psycopg.py"
+    },
+    "apscheduler.eventbrokers.redis": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "apscheduler._events",
+            "apscheduler._utils",
+            "apscheduler.eventbrokers.base",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.eventbrokers.redis",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/eventbrokers/redis.py"
+    },
+    "apscheduler.executors": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "name": "apscheduler.executors",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/executors/__init__.py"
+    },
+    "apscheduler.executors.async_": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "apscheduler._structures",
+            "apscheduler.abc"
+        ],
+        "name": "apscheduler.executors.async_",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/executors/async_.py"
+    },
+    "apscheduler.executors.qt": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.from_thread",
+            "apscheduler",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.executors.qt",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/executors/qt.py"
+    },
+    "apscheduler.executors.subprocess": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.to_process",
+            "apscheduler._structures",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.executors.subprocess",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/executors/subprocess.py"
+    },
+    "apscheduler.executors.thread": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler._schedulers.async_"
+        ],
+        "imports": [
+            "anyio",
+            "anyio.to_thread",
+            "apscheduler._structures",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.executors.thread",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/executors/thread.py"
+    },
+    "apscheduler.serializers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.datastores.base",
+            "apscheduler.eventbrokers.base"
+        ],
+        "name": "apscheduler.serializers",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/serializers/__init__.py"
+    },
+    "apscheduler.serializers.cbor": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "apscheduler",
+            "apscheduler._marshalling",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.serializers.cbor",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/serializers/cbor.py"
+    },
+    "apscheduler.serializers.json": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.eventbrokers.base"
+        ],
+        "imports": [
+            "apscheduler",
+            "apscheduler._marshalling",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.serializers.json",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/serializers/json.py"
+    },
+    "apscheduler.serializers.pickle": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.datastores.base"
+        ],
+        "imports": [
+            "apscheduler",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.serializers.pickle",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/serializers/pickle.py"
+    },
+    "apscheduler.triggers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "name": "apscheduler.triggers",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/__init__.py"
+    },
+    "apscheduler.triggers.calendarinterval": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.triggers.calendarinterval",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/calendarinterval.py"
+    },
+    "apscheduler.triggers.combining": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._exceptions",
+            "apscheduler._marshalling",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "attrs"
+        ],
+        "name": "apscheduler.triggers.combining",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/combining.py"
+    },
+    "apscheduler.triggers.cron": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "apscheduler.triggers.cron.fields",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.triggers.cron",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/cron/__init__.py"
+    },
+    "apscheduler.triggers.cron.expressions": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.triggers.cron.fields"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._validators",
+            "apscheduler.triggers.cron.fields",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.triggers.cron.expressions",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/cron/expressions.py"
+    },
+    "apscheduler.triggers.cron.fields": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.cron.expressions"
+        ],
+        "imports": [
+            "apscheduler.triggers.cron.expressions"
+        ],
+        "name": "apscheduler.triggers.cron.fields",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/cron/fields.py"
+    },
+    "apscheduler.triggers.date": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.triggers.date",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/date.py"
+    },
+    "apscheduler.triggers.interval": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "apscheduler._converters",
+            "apscheduler._utils",
+            "apscheduler.abc",
+            "attr",
+            "attr.validators",
+            "attrs"
+        ],
+        "name": "apscheduler.triggers.interval",
+        "path": "/teamspace/studios/this_studio/apscheduler/src/apscheduler/triggers/interval.py"
+    },
+    "attr": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler._decorators",
+            "apscheduler._retry",
+            "apscheduler._schedulers.async_",
+            "apscheduler._structures",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.cron.expressions",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval",
+            "attr",
+            "attr.setters",
+            "attrs",
+            "attrs.converters",
+            "attrs.validators"
+        ],
+        "imports": [
+            "attr",
+            "attr.setters",
+            "attr.validators"
+        ],
+        "name": "attr",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/attr/__init__.py"
+    },
+    "attr.setters": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler._structures",
+            "attr"
+        ],
+        "imports": [
+            "attr"
+        ],
+        "name": "attr.setters",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/attr/setters.py"
+    },
+    "attr.validators": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler._decorators",
+            "apscheduler._retry",
+            "apscheduler._schedulers.async_",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.cron.expressions",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval",
+            "attr",
+            "attrs.validators"
+        ],
+        "name": "attr.validators",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/attr/validators.py"
+    },
+    "attrs": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler._decorators",
+            "apscheduler._events",
+            "apscheduler._retry",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler._validators",
+            "apscheduler.datastores.base",
+            "apscheduler.datastores.memory",
+            "apscheduler.datastores.mongodb",
+            "apscheduler.datastores.sqlalchemy",
+            "apscheduler.eventbrokers.asyncpg",
+            "apscheduler.eventbrokers.base",
+            "apscheduler.eventbrokers.local",
+            "apscheduler.eventbrokers.mqtt",
+            "apscheduler.eventbrokers.psycopg",
+            "apscheduler.eventbrokers.redis",
+            "apscheduler.executors.qt",
+            "apscheduler.executors.subprocess",
+            "apscheduler.executors.thread",
+            "apscheduler.serializers.cbor",
+            "apscheduler.serializers.json",
+            "apscheduler.serializers.pickle",
+            "apscheduler.triggers.calendarinterval",
+            "apscheduler.triggers.combining",
+            "apscheduler.triggers.cron",
+            "apscheduler.triggers.cron.expressions",
+            "apscheduler.triggers.date",
+            "apscheduler.triggers.interval",
+            "attrs"
+        ],
+        "imports": [
+            "attr",
+            "attrs",
+            "attrs.converters",
+            "attrs.validators"
+        ],
+        "name": "attrs",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/attrs/__init__.py"
+    },
+    "attrs.converters": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler._events",
+            "attrs"
+        ],
+        "imports": [
+            "attr"
+        ],
+        "name": "attrs.converters",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/attrs/converters.py"
+    },
+    "attrs.validators": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler._structures",
+            "apscheduler.datastores.mongodb",
+            "attrs"
+        ],
+        "imports": [
+            "attr",
+            "attr.validators"
+        ],
+        "name": "attrs.validators",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/attrs/validators.py"
+    },
+    "sniffio": {
+        "bacon": 2,
+        "imported_by": [
+            "apscheduler.datastores.sqlalchemy"
+        ],
+        "name": "sniffio",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/sniffio/__init__.py"
+    },
+    "typing_extensions": {
+        "bacon": 2,
+        "imported_by": [
+            "anyio.from_thread",
+            "anyio.to_process",
+            "anyio.to_thread",
+            "apscheduler._schedulers.async_",
+            "apscheduler._schedulers.sync",
+            "apscheduler._structures",
+            "apscheduler.abc",
+            "apscheduler.datastores.mongodb"
+        ],
+        "name": "typing_extensions",
+        "path": "/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/typing_extensions.py"
+    }
+}
